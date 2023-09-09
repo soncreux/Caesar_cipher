@@ -11,9 +11,9 @@ def encrypt(text, shift):
 			result+=" "
 
 		elif(char.isupper()):
-			result += chr((ord(char) + shift - 64) % 26 + 65)
+			result += chr((ord(char) + shift - 64) % 26 + 64)
 		else:
-			result += chr((ord(char) + shift - 96) % 26 + 97)
+			result += chr((ord(char) + shift - 96) % 26 + 96)
 	
 	return result
 
